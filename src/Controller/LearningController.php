@@ -12,9 +12,18 @@ class LearningController extends AbstractController
      * @Route("/about-me")
      */
 
-    public function aboutMe(): Response
-    {
-        $name='BeCode';
+    //public function aboutMe(): Response
+    //    {
+    //        $name='BeCode';
+    //        return $this->render('learning/about-me.html.twig', [
+    //            'name' => $name,
+    //        ]);
+    //    }
+
+
+
+    public function showMyName():Response
+    {$name='Unknown';
         return $this->render('learning/about-me.html.twig', [
             'name' => $name,
         ]);

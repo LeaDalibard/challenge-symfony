@@ -1,7 +1,7 @@
-index:
-   path: index
-   controller: App\Controller\DefaultController::index
+#index:
+  # path: index
+  # controller: App\Controller\DefaultController::index
 
-AboutMe:
-  path: about-me
-  controller: App\Controller\LearningController::aboutMe
+#AboutMe:
+ # path: about-me
+ # controller: App\Controller\LearningController::aboutMe
