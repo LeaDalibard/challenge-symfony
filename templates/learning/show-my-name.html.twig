@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    <h1>Hello {{name }}  ! ✅</h1>
+
+    <form class="ui form" action="changemyname" method="get">
+
+        <div class="field">
+            <label>Name:</label>
+            <input type="text" name="name">
+        </div>
+
+
+        <button class="ui button" type="submit">Send</button>
+
+    </form>
+
+
+{% endblock %}
