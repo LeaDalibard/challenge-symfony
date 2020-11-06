@@ -21,4 +21,11 @@ class Name
     {
         return $this->name;
     }
+
+     function setName($name): void
+    {
+        $this->name = $name;
+    }
+
+
 }

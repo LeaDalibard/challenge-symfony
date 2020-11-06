@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Name;
+use App\Form\NameType;
+
 //use Doctrine\DBAL\Types\TextType;
 //use http\Env\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -26,15 +28,21 @@ class LearningController extends AbstractController
         ]);
     }
 
-    public function new( Request $request)
-    {
-        $name = new Name();
+    //public function new(Request $request)
+    //    {
+    //        $name = new Name();
+    //
+    //        $form=$this->createForm(NameType::class,$name);
+    //
+    //        $form->handleRequest($request);
+    //        if($form->isSubmitted() && $form->isValid()){
+    //            $name=$form->getData();
+    //            return $this->redirectToRoute('index');
+    //        }
+    //
+    //        return $this->render('learning/about-me.html.twig',['form'=>$form->createView(),]);
+    //    }
 
-        $form = $this->createFormBuilder($name)
-            ->add('name', TextType::class)
-            ->add('save', SubmitType::class, ['label' => 'Change Name'])
-            ->getForm();
-    }
 
     //  public function changeMyName():RedirectResponse
     //    {
