@@ -9,19 +9,14 @@ use Symfony\Component\Routing\Annotation\Route;
 class LearningController extends AbstractController
 {
     /**
-     * @Route("/learning", name="learning")
+     * @Route("/about-me")
      */
-    public function index(): Response
-    {
-        return $this->render('learning/index.html.twig', [
-            'controller_name' => 'LearningController',
-        ]);
-    }
 
     public function aboutMe(): Response
     {
+        $name='BeCode';
         return $this->render('learning/about-me.html.twig', [
-            'controller_name' => 'LearningController',
+            'name' => $name,
         ]);
     }
 }
